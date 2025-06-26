@@ -8,7 +8,6 @@ Ideal for large-scale or batch protein functional annotation in bioinformatics w
 - Automatic download of DIAMOND and the latest Swiss-Prot database (or use your own)
 - Built-in support for database indexing and multi-threaded annotation
 - Customizable identity and coverage thresholds
-- Download mirroring and local proxy support for use in China (or limited network environments)
 - Clean, user-friendly output for downstream analysis
 
 **Typical usage scenario:**  
@@ -25,7 +24,6 @@ Quickly annotate large-scale protein datasets in microbial genomics, metagenomic
 - 自动下载 DIAMOND 程序和最新版 Swiss-Prot 数据库（也可使用自有数据库/索引）
 - 自动构建数据库索引、支持多线程注释
 - 支持自定义比对相似度和覆盖度参数
-- 支持中国大陆/网络受限环境下的镜像下载与本地代理
 - 输出结构化、便于后续分析的数据表
 
 **典型应用场景：**  
