@@ -18,7 +18,6 @@ Quickly annotate large-scale protein datasets in microbial genomics, metagenomic
 
 ## 【中文简介】
 
-```markdown
 # swissprot-auto-annotator
 
 **swissprot-auto-annotator** 是一款自动化的 Swiss-Prot 蛋白质注释脚本工具，面向蛋白质FASTA文件的快速批量注释。  
