@@ -27,3 +27,48 @@ Quickly annotate large-scale protein datasets in microbial genomics, metagenomic
 **典型应用场景：**  
 适用于微生物基因组、宏基因组或自定义流程中大批量蛋白质序列的高效功能注释。
 
+## Usage / 使用方法
+
+### 1. Quick Start / 快速开始
+
+```bash
+python3 swissprot_auto_annotator.py --help
+```
+
+### 2. Basic Usage / 基本用法
+
+```bash
+python3 swissprot_auto_annotator.py -i your_protein.faa
+```
+
+### 3. Main Parameters / 主要参数
+
+| Parameter / 参数 | Description / 说明 | Default / 默认值 |
+|------------------|--------------------|------------------|
+| `-i, --query`    | Input protein FASTA file / 输入蛋白FASTA文件 | *required / 必填* |
+| `-o, --prefix`   | Output prefix / 输出前缀 | `sprot_out` |
+| `--id`           | Minimum percent identity / 最低相似度百分比 | `30` |
+| `--cov`          | Minimum query coverage (%) / 最低覆盖率 | `50` |
+| `--threads`      | Number of threads / 线程数 | `8` |
+| `--dbaa`         | Swiss-Prot FASTA file path / Swiss-Prot FASTA路径 | 自动下载（如未提供） |
+
+### 4. Example / 运行示例
+
+```bash
+python3 swissprot_auto_annotator.py \
+  -i example_proteins.faa \
+  -o my_annotation \
+  --id 40 \
+  --cov 60 \
+  --threads 16
+```
+
+### 5. Output Description / 输出说明
+
+- `${prefix}.tsv`  
+  Raw DIAMOND output in tab-delimited format / DIAMOND 原始注释结果
+
+- `${prefix}.format.tsv`  
+  Formatted annotation table: `ProteinID`, `DB`, `AccessionNumber`, `EntryName`, `Description`, `OrganismSpecies`  
+  标准化注释表，便于后续分析
+
