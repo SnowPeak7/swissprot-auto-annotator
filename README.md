@@ -1,4 +1,4 @@
-# swissprot-auto-annotator
+# swissprot-auto-annotator/自动swissprot注释工具
 **swissprot-auto-annotator** is an easy-to-use, automated Swiss-Prot annotation tool for protein FASTA files.  
 It leverages the ultra-fast [DIAMOND](https://github.com/bbuchfink/diamond) aligner and can automatically handle database downloads, index building, and batch annotation.  
 Ideal for large-scale or batch protein functional annotation in bioinformatics workflows, especially in environments with unreliable internet connections or limited access to foreign resources.
@@ -15,10 +15,6 @@ Ideal for large-scale or batch protein functional annotation in bioinformatics w
 Quickly annotate large-scale protein datasets in microbial genomics, metagenomics, or custom pipelines with minimal configuration.
 
 ---
-
-## 【中文简介】
-
-# swissprot-auto-annotator
 
 **swissprot-auto-annotator** 是一款自动化的 Swiss-Prot 蛋白质注释脚本工具，面向蛋白质FASTA文件的快速批量注释。  
 本工具集成了高速的 [DIAMOND](https://github.com/bbuchfink/diamond) 比对引擎，可自动下载和管理 Swiss-Prot 数据库、构建索引，并实现批量注释。  
