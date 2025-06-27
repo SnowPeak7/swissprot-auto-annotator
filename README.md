@@ -32,13 +32,13 @@ Quickly annotate large-scale protein datasets in microbial genomics, metagenomic
 ### 1. Quick Start / 快速开始
 
 ```bash
-python3 swissprot_auto_annotator.py --help
+python3 annotate_sprot.py --help
 ```
 
 ### 2. Basic Usage / 基本用法
 
 ```bash
-python3 swissprot_auto_annotator.py -i your_protein.faa
+python3 annotate_sprot.py -i your_protein.faa
 ```
 
 ### 3. Main Parameters / 主要参数
@@ -55,11 +55,11 @@ python3 swissprot_auto_annotator.py -i your_protein.faa
 ### 4. Example / 运行示例
 
 ```bash
-python3 swissprot_auto_annotator.py \
+python3 annotate_sprot.py \
   -i example_proteins.faa \
   -o my_annotation \
-  --id 40 \
-  --cov 60 \
+  --id 50 \
+  --cov 75 \
   --threads 16
 ```
 
